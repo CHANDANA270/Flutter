@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reminder Application</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Reminder Application</h2>
+
+        <label for="day">Select Day:</label>
+        <select id="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+
+        <label for="time">Select Time:</label>
+        <select id="time">
+            <!-- You can generate time options dynamically using JavaScript if needed -->
+            <option value="08:00">08:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="18:00">06:00 PM</option>
+        </select>
+
+        <label for="activity">Select Activity:</label>
+        <select id="activity">
+            <option value="Wake up">Wake up</option>
+            <option value="Go to gym">Go to gym</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meetings">Meetings</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Quick nap">Quick nap</option>
+            <option value="Go to library">Go to library</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Go to sleep">Go to sleep</option>
+        </select>
+
+        <button onclick="addReminder()">Add Reminder</button>
+
+        <ul id="remindersList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
